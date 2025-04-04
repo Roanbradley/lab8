@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-title>Status</ion-title>
+   
+   <ion-back-button></ion-back-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content color="light">
+    <ion-list [inset]="true">
+    <ion-radio-group [(ngModel)]="myStatus">
+      <ion-item>
+        <ion-label>happy</ion-label>
+        <ion-radio slot="end" value ="happy"></ion-radio> 
+      </ion-item>
+      <ion-item>
+        <ion-label>energrtic</ion-label>
+        <ion-radio slot="end" value ="energetic"></ion-radio> 
+
+      </ion-item>
+      <ion-item>
+        <ion-label>sad</ion-label>
+        <ion-radio slot="end" value ="sad"></ion-radio> 
+
+      </ion-item>
+      <ion-item>
+        <ion-label>worried</ion-label>
+        <ion-radio slot="end" value ="worried"></ion-radio> 
+
+      </ion-item>
+      <ion-item>
+        <ion-label>angry</ion-label>
+        <ion-radio slot="end" value ="angry"></ion-radio> 
+
+      </ion-item>
+    </ion-radio-group>
+    </ion-list>
+    <ion-button (click)="OnSave()">SAVE</ion-button>
+  </ion-content>
+</ion-content>
